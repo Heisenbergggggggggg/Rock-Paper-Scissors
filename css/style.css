@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vw;
+
+}
+
+.score_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.backgroundfield {
+    height: 80vh;
+    background-image: url("../css/images/narutovalleybackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.score_card {
+    margin: auto;
+
+}
+
+.characterbox1,
+.characterbox2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.gif {
+    height: 150px;
+    margin-bottom: 33px;
+}
+
+.next_throw {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin 5px;
+    padding: 0 10% 0 10%;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.game_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.score_keep {
+    font-weight: bold;
+
+}
+
+.game_image {
+    width: 75%;
+}
+
+.text_result {
+    font-size: 1em;
+    margin: 18px 0 10px 0;
+}
+
+.btn {
+    background-color: blue;
+    font-size: .8em;
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width: 780px) {
+    .container {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .score_row .header {
+        /* height: 100px;
+        width: 30vw; */
+        flex-wrap: nowrap;
+    }
+
+    .card-title {
+        /* background-color: yellow; */
+        font-size: .8em;
+    }
+
+    .result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2em;
+
+    }
+
+    .game_image {
+        width: 90px;
+        height: 70px;
+    }
+
+    .score_card {
+        font-size: .8em;
+    }
+
+    .card-body {
+        font-size: .2;
+    }
+
+    .game_count {
+        font-size: 1em;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .next_throw {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 5px; */
+    }
+
+    .gif {
+        height: 100px;
+        margin-bottom: 33px;
+    }
+}

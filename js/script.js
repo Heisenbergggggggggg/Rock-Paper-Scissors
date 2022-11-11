@@ -20,15 +20,15 @@ var computerReturn = function (play) {
     switch (play) {
         case "r":
             text = "ROCK"
-            html_cpu_image.src = "css/images/rock.png"
+            html_cpu_image.src = "./css/images/rock.png"
             break;
         case "p":
             text = "PAPER"
-            html_cpu_image.src = "css/images/paper.png"
+            html_cpu_image.src = "./css/images/paper.png"
             break;
         case "s":
             text = "SCISSORS"
-            html_cpu_image.src = "css/images/scissors.png"
+            html_cpu_image.src = "./css/images/scissors.png"
             break;
     }
     return text;
@@ -39,7 +39,7 @@ var computerReturn = function (play) {
 document.getElementById("rock").onclick = function () {
     userGuess = "r";
     userText.textContent = "ROCK";
-    html_user_image.src = "css/images/rock.png"
+    html_user_image.src = "./css/images/rock.png"
     console.log(computerGuess());
 
     let play = computerGuess();
@@ -53,7 +53,7 @@ document.getElementById("rock").onclick = function () {
 document.getElementById("paper").onclick = function () {
     userGuess = "p";
     userText.textContent = "PAPER";
-    html_user_image.src = "css/images/paper.png"
+    html_user_image.src = "./css/images/paper.png"
     console.log(computerGuess());
 
     let play = computerGuess();
@@ -67,7 +67,7 @@ document.getElementById("paper").onclick = function () {
 document.getElementById("scissors").onclick = function () {
     userGuess = "s";
     userText.textContent = "SCISSORS";
-    html_user_image.src = "css/images/scissors.png"
+    html_user_image.src = "./css/images/scissors.png"
     console.log(computerGuess());
 
     let play = computerGuess();
